@@ -17,7 +17,7 @@ const routes: Routes = [
   {path:'add', component:AddComponent},
   {path:'edit', component:EditComponent},
   //Esto de abajo es cocina
-  {path:'cuisine',component:CocinaComponent},
+  {path:'cuisine',component:CocinaComponent}, //AQUI LLAMAMOS TODO EL HTML DE LA COCINA se llama cuisine
   {path:'listarcoci', component:ListcociComponent},
   {path:'addcoci', component:AddcociComponent},
   {path:'editcoci', component:EditcociComponent}
