@@ -1,0 +1,42 @@
+<div class="container">
+<div class="card">
+    <div class="card-header">
+        <h3>Chef</h3>
+    </div>
+    <div class="card-body">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Nacionalidad</th>
+                    <th>Fecha de Nacimiento</th>
+                    <th>Tipo de Cocina</th>
+                    <th>Edita o Borra</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let chef of chefs" class="text-center">
+                    <td >{{chef.id}}</td>
+                    <td>{{chef.name}}</td>
+                    <td>{{chef.nationality}}</td>
+                    <td>{{chef.birthYear}}</td>
+                    
+                    <td >
+                        <span *ngFor="let tiranosaurio of chef.cuisine">
+                            {{tiranosaurio.type}}
+                        </span>
+                    </td>
+                    <td>
+                        <button class="btn btn-warning">Editar</button>
+                        <button class="btn btn-danger">Borrar</button>
+                    </td>
+                </tr>
+
+            </tbody>
+
+
+        </table>
+    </div>
+</div>
+</div>
